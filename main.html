@@ -8,6 +8,35 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+
+	<form action="api/feedback" method="post">
+		<h1>Feedback Form</h1>
+
+		<!-- Name -->
+		<label for="name">Name</label>
+		<input type="text" id="name" minlength="3" maxlength="50" required><br><br>
+
+		<!-- portfolio -->
+		<label for="url">Portfolio url</label>
+		<input 
+			type="url" 
+			id="portfolio" 
+			placeholder="https://yourdomain.com" 
+			pattern="https://.*" 
+			title="URL must start with https://"
+			required
+		><br><br>
+
+		<!-- Favorite Color -->
+		<label for="favColor">Favorite Color</label>
+		<input type="color" id="favColor" required><br><br>
+
+		<!-- Likeness -->
+		<label for="likeness">Likeness</label>
+		<input type="range" id="likeness" min="1" max="100" required>
+		
+	</form>
+	
     <script type="text/javascript" src="./script.js">
 </script>
 
